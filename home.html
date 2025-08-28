@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="boton.js"></script>
+    <script src="lista.js"></script>
+</head>
+<body>
+   <header><h1>Perfil de Usuario</h1></header>
+   
+   <main>
+    
+    <section class="informacion">
+        <h1>Información Personal</h1>
+        <p>Nombre: Juan Perez</p>
+        <p>Email: juanperez@gmail.com</p>
+        <p>Biografía: Juan Perez</p>
+    </section>
+    
+    <section class="habilidades">
+        <h1>Habilidades Personales</h1>
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>CSS</li>
+            <li>HTML</li>
+        </ul>
+    </section>
+
+    <section class="boton">
+        <button id="miBoton">Click aquí</button>
+        <p id="mensaje">Texto texto texto</p>
+    </section>  
+   </main>
+   
+   <footer>
+    <p>Derechos reservados © 2024</p>
+   </footer>
+
+</body>
+</html>
+
+<!--¿Por qué elegiste esas etiquetas semánticas en lugar de solo <div>s para cada sección?-->
+<!--Para tener conocimiento mas claro de qué parte del código contiene qué parte de la página-->
+<!--Así permite la facilidad para cambios más adelante dentro del código-->
+<!--Además, permite la persistencia de las páginas por lo que se puede consumir una base de html para todas las páginas,-->
+<!-- tomando el header o el footer correspondiente-->

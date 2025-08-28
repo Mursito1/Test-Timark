@@ -1,0 +1,54 @@
+/* Header y footer color gris */
+header, footer {
+    background-color: #6160604d;
+    text-align: center;
+}
+
+/* Sección de información personal centrado vertical y horizontalmente, usando el 100% del ancho */
+.informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Habilidades en lista vertical eliminando los puntos */
+.habilidades {
+    text-align: center;
+}
+
+.habilidades ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+
+.habilidades li {
+    display: inline;
+}
+
+/* Boton centrado */
+.boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Diseño responsivo para 768px */
+@media (max-width: 768px) {
+    .habilidades ul {
+        display: block;
+    }
+
+    .habilidades li {
+        display: list-item;
+    }
+}
+
+/* Explica brevemente el concepto de "Mobile First" en diseño web y cómo aplicarías sus principios al desarrollar una interfaz. */
+/* El concepto de mobile first se refiere a diseñar las páginas primero para que se vean bien en pantallas pequeñas */
+/* y luego ir adaptándolas para pantallas más grandes con el fin de optimizar el desarrollo */
+/* La manera de aplicar sus principios es diseñando la página para pantallas pequeñas primero e ir adaptando */
+/* las funcionalidades para que se puedan usar tanto en pantallas pequeñas como en pantallas grandes */
+/* usando media queries para que se adapte el diseño a los diferentes tamaños */

@@ -1,0 +1,37 @@
+-verificar rama principal 
+git checkout main
+
+-pull de cambios en main
+git pull origin main
+
+-crear una nueva rama
+git checkout -b feature/nueva-funcionalidad
+
+-realizar cambios a la rama y agregarlos
+git add .
+
+-commit con mensaje de cambios
+git commit -m "cambios nuevos a nueva rama"
+
+-push para subir cambios a rama 
+git push origin feature/nueva-funcionalidad
+
+-----------------------------------------------------------------------------
+
+¿Cuál es la diferencia principal entre git merge y git rebase y en qué escenarios usarías cada uno?
+
+La diferencia principal entre git merge y git rebase es que git merge es para entornos compartidos como las ramas principales
+y git rebase es para ramas personales, esto porque borra el historial de cambios mientras que git merge los conserva
+
+-----------------------------------------------------------------------------
+
+Tú y un compañero han modificado la misma línea de código en el mismo archivo en dos ramas diferentes. 
+Ambos hacen push a sus respectivas ramas y luego intentan fusionar (merge) sus cambios a la rama main.
+Describe el proceso general que seguirías para resolver este conflicto de fusión.
+
+Lo que haria depende del tamaño del archivo o de los cambios con conflicto.
+Si el archivo es pequeño o el cambio es pequeño, haria un cambio manual junto con un nuevo commit para la rama main
+explicando el nuevo cambio y el merge de estos
+Si el archivo es muy grande o el cambio es grande, lo que haria es copiar el codigo de mi rama actual sin hacer commit,
+haria un pull nuevamente de la rama main para tener los cambios de mi compañero, y con el codigo mio haria cambios manuales 
+hasta obtener un nuevo commit.
